@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg1"
+    tools:context=".activities.fragments.LoginFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fakeViewForMargin"
+        android:layout_marginBottom="50pt"/>
+
+    <ImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo_white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="@color/textMain"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/loginUsername"
+        android:hint="Enter username..."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp"
+        android:background="@color/backgroundMain"
+        />
+
+    <EditText
+        android:id="@+id/loginPassword"
+        android:hint="Enter password..."
+        android:inputType="textPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp"
+        android:background="@color/backgroundMain"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="10dp"
+        android:padding="20dp"
+        android:background="@color/backgroundMain"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/messageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/backgroundMain"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:text="Message"
+            android:textColor="#000"
+            android:textSize="18dp"
+            android:visibility="invisible"
+            android:layout_alignParentBottom="true"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

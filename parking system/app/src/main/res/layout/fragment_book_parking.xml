@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.fragments.BookParkingFragment">
+
+    <LinearLayout
+        android:id="@+id/spotIdProvided"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="Book Parking Spot"-->
+            <!--android:textColor="#000"-->
+            <!--android:textAlignment="center"-->
+            <!--android:background="#eee"-->
+            <!--android:textSize="20dp"-->
+            <!--android:padding="20dp"-->
+            <!--/>-->
+        <TextView
+            android:textAlignment="center"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:layout_width="match_parent"
+            android:textSize="20dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/chosenParkingSpotIdForBookingView"/>
+        <TextView
+            android:id="@+id/labelChooseVehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Vehicle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"/>
+        <Spinner
+            android:id="@+id/myVehiclesForBooking"
+            android:hint="Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:tooltipText="Vehicle type"/>
+
+        <TextView
+            android:id="@+id/bookingDateTimeView"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:hint="Booking date time..."
+            android:textAlignment="center"
+            android:textSize="18dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <DatePicker
+            android:id="@+id/bookingDate"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="20dp"
+            android:background="#eee"
+            android:layout_height="wrap_content"/>
+
+        <TimePicker
+            android:id="@+id/bookingTime"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:timePickerMode="spinner"
+            android:background="#eee"
+            android:layout_height="wrap_content"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/btnBookParking"
+                android:text="Book"
+                android:drawableTop="@drawable/book"
+                android:padding="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_width="200dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btnCancelBooking"
+                android:layout_toLeftOf="@+id/btnBookParking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="25dp"
+                android:layout_marginLeft="20dp"
+                android:text="Cancel"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/nooSpotIdMsg"
+            android:layout_width="match_parent"
+            android:layout_margin="20dp"
+            android:textColor="#000"
+            android:visibility="gone"
+            android:fontFamily="sans-serif"
+            android:textSize="18dp"
+            android:layout_height="wrap_content"
+            android:text="@string/how_to_book"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.owneractivities.AddParkingSpotActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Parking Spot"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:background="#eee"
+        android:textSize="18dp"
+        android:padding="20dp"/>
+    <Button
+        android:id="@+id/btnGoBack"
+        android:layout_width="100dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:text="Back"/>
+
+    <EditText
+        android:hint="Title..."
+        android:id="@+id/addSpotTitle"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:hint="Description..."
+        android:layout_margin="10dp"
+        android:id="@+id/addSpotDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:id="@+id/addSpotMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnAddSpot"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            android:fontFamily="sans-serif-black"
+            android:background="#26a65b"
+            android:textColor="#fff"
+            android:textSize="22dp"
+            android:layout_centerHorizontal="true"
+            android:drawableRight="@drawable/marker_white"
+            android:text="Add"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

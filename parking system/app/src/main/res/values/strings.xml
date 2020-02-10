@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">QRParking</string>
+    <string name="title_activity_search_parking_spots">Map</string>
+    <string name="title_activity_dashboard">Dashboard</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Title</string>
+    <string name="nav_header_subtitle">Email</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!--add vehicle type spinner array-->
+    <string-array name="vehicleTypes">
+        <item>One wheeler</item>
+        <item>Two wheeler</item>
+        <item>Three wheeler</item>
+        <item>Four wheeler</item>
+        <item>Six wheeler</item>
+        <item>Eight wheeler</item>
+    </string-array>
+
+    <string-array name="userTypes">
+        <item>user</item>
+        <item>owner</item>
+    </string-array>
+
+    <string-array name="userTableValues">
+        <item>username</item>
+        <item>password</item>
+        <item>phone</item>
+        <item>email</item>
+        <item>type</item>
+    </string-array>
+
+    <string name="how_to_book">
+        1. Search spots based on your requriement.\n\n
+        2. All found spots are shown on map\n\n
+        3. Click on the spots marker on the map and shake your phone to the left to choose that marker spot\n\n
+        4. Now you will enter into booking part of that spot\n\n
+        5. After this, just choose which vehicle you want to book and choose datetime\n
+    </string>
+
+    <string name="how_to_view_qr">
+        1. Go to view bookings \n\n
+        2. All list of your bookings will be displayed \n\n
+        3. Click view qr button on any booking you want view qr of\n
+    </string>
+
+</resources>

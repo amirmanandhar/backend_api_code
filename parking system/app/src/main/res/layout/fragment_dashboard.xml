@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".activities.fragments.DashboardFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/welcomeUsernameView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Welcome, username"
+            android:background="#000"
+            android:textColor="#FFF"
+            android:textAlignment="center"
+            android:padding="20dp"
+            android:textSize="25dp"
+            android:layout_marginBottom="20dp"
+            android:drawableTop="@drawable/logo_white"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <Button
+            android:id="@+id/myVehiclesBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Vehicles"
+            android:drawableTop="@drawable/vehicle"
+            android:padding="30dp"
+            android:drawableTint="#fff"
+            android:background="#50FFFFFF"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:id="@+id/myBookingsBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="My Booking"
+            android:drawableTop="@drawable/mybooking"
+            android:padding="30dp"
+            android:textSize="18dp"
+            android:drawableTint="#fff"
+            android:background="#50FFFFFF"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            />
+
+        <Button
+            android:id="@+id/editAccountBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit account"
+            android:drawableTop="@drawable/editaccount"
+            android:padding="30dp"
+            android:textSize="18dp"
+            android:drawableTint="#fff"
+            android:background="#50FFFFFF"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            />
+
+        <LinearLayout
+            android:id="@+id/ownerButtons"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/divider"/>
+
+            <TextView
+                android:text="Owner area"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/adminAddParkingSpot"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Add parking spots"
+                android:drawableTop="@drawable/marker"
+                android:padding="30dp"
+                android:textSize="18dp"
+                android:drawableTint="#fff"
+                android:background="#50FFFFFF"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                />
+
+            <include layout="@layout/divider"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/adminButtons"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <include layout="@layout/divider"/>
+
+            <TextView
+                android:text="Admin area"
+                android:textColor="#fff"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/adminUpdateUserType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update user type"
+                android:drawableTop="@drawable/update"
+                android:padding="30dp"
+                android:textSize="18dp"
+                android:background="#50FFFFFF"
+                android:textColor="#fff"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                />
+
+            <include layout="@layout/divider"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:drawableTop="@drawable/logout"
+            android:padding="30dp"
+            android:textSize="18dp"
+            android:drawableTint="#fff"
+            android:background="#60d64541"
+            android:textColor="#fff"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="80dp"
+            />
+
+    </LinearLayout>
+</ScrollView>

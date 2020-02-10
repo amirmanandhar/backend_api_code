@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.fragments.SearchParkingSpotsFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Parking Spots"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:background="#eee"
+        android:textSize="18dp"
+        android:padding="20dp"/>
+
+
+    <AutoCompleteTextView
+        android:layout_marginTop="10dp"
+        android:padding="30dp"
+        android:id="@+id/autoCompleteSearchKeyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btnSearchMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"/>
+
+    <fragment
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/mapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+
+
+</LinearLayout>

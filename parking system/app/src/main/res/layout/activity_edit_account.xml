@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg1"
+    tools:context=".activities.EditAccountActivity">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/fakeViewForMargin"
+            android:layout_marginBottom="50pt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Account"
+            android:textSize="30dp"
+            android:fontFamily="sans-serif-black"
+            android:textColor="@color/textMain"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="To update"/>
+
+        <Spinner
+            android:id="@+id/toUpdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:background="#fff"
+            android:padding="30dp"/>
+
+        <TextView
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update to"/>
+
+        <EditText
+            android:id="@+id/updateTo"
+            android:hint="New value..."
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            android:background="@color/backgroundMain"
+            />
+
+        <Button
+            android:id="@+id/btnEdit"
+            android:text="Edit"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="20dp"
+            android:background="@color/backgroundMain"
+            />
+
+        <Button
+            android:id="@+id/btnDash"
+            android:text="Back"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="40dp"
+            android:background="#ddd"
+            />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/messageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/backgroundMain"
+                android:padding="10dp"
+                android:textAlignment="center"
+                android:text="Message"
+                android:textColor="#000"
+                android:textSize="18dp"
+                android:visibility="invisible"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+</ScrollView>

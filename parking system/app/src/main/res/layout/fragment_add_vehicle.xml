@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".activities.fragments.AddVehicleFragment">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Vehicle"
+            android:textColor="#000"
+            android:textAlignment="center"
+            android:background="#eee"
+            android:textSize="18dp"
+            android:padding="20dp"
+            />
+
+        <EditText
+            android:id="@+id/vehiclName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Vehicle name.."
+            android:layout_margin="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Vehicle type"
+            android:layout_margin="20dp"/>
+        <Spinner
+            android:id="@+id/vehicleType"
+            android:hint="Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:tooltipText="Vehicle type"/>
+
+        <AutoCompleteTextView
+            android:id="@+id/vehicleBrand"
+            android:hint="Brand..."
+            android:layout_margin="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/vehicleNo"
+            android:layout_margin="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:hint="Vehicle's full number.."
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnAddVehicle"
+            android:text="Add"
+            android:layout_margin="20dp"
+            android:paddingTop="30dp"
+            android:paddingRight="30dp"
+            android:paddingBottom="30dp"
+            android:tooltipText="You can tilt your phone to left to add vehicle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</ScrollView>
